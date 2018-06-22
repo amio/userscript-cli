@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const path = require('path')
+const transform = require('..')
+
+try {
+  const cwd = process.cwd()
+  const source = path.join(cwd, process.argv[2])
+  const target = path.join(cwd, process.argv[3])
+
+  transform(source, target)
+} catch (e) {
+  console.error(e.message)
+  process.exitCode = 1
+}
