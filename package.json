@@ -1,6 +1,6 @@
 {
   "name": "userscript-cli",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": "amio/userscript-cli",
   "description": "Transform modern(esm) userscript to classic(iife) userscript",
   "main": "index.js",
